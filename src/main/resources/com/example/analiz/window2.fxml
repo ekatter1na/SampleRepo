@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="616.0" style="-fx-background-color: #F0D698;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analiz.window2">
+    <children>
+        <Label fx:id="stan" layoutX="159.0" layoutY="36.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="90.0" layoutY="79.0" text="Годные детали">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="225.0" layoutY="79.0" text="Брак">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label fx:id="stan1" layoutX="422.0" layoutY="36.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="346.0" layoutY="79.0" text="Годные детали ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="489.0" layoutY="79.0" text="Брак">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Button fx:id="buttonAnaliz" layoutX="346.0" layoutY="236.0" mnemonicParsing="false" onAction="#AnalizClikc" prefHeight="25.0" prefWidth="206.0" style="-fx-background-color: #FFFFFF;" text="Меньше бракованных деталей">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+        <AnchorPane layoutX="104.0" layoutY="105.0" prefHeight="43.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label fx:id="god1" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="13.0" text="-" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="476.0" layoutY="105.0" prefHeight="43.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label fx:id="brak2" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="15.0" text="-" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="212.0" layoutY="105.0" prefHeight="43.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label fx:id="brak1" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="14.0" text="-" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="362.0" layoutY="105.0" prefHeight="43.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label fx:id="god2" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="14.0" text="-" />
+            </children>
+        </AnchorPane>
+        <Label fx:id="coll">
+            <font>
+                <Font size="1.0" />
+            </font>
+        </Label>
+        <Button fx:id="back_button" layoutX="26.0" layoutY="293.0" mnemonicParsing="false" onAction="#BackClick" style="-fx-background-color: #FFFFFF;" text="Назад">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+        <Label fx:id="resaltbrak" contentDisplay="CENTER" layoutX="177.0" layoutY="165.0" prefHeight="17.0" prefWidth="123.0" />
+      <Label fx:id="resaltbrak2" contentDisplay="CENTER" layoutX="449.0" layoutY="165.0" prefHeight="17.0" prefWidth="106.0" />
+      <Button fx:id="buttonAnaliz2" layoutX="89.0" layoutY="236.0" mnemonicParsing="false" onAction="#AnalizClikc2" prefHeight="25.0" prefWidth="206.0" style="-fx-background-color: #FFFFFF;" text="Меньше годных деталей ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label fx:id="resaltgod" contentDisplay="CENTER" layoutX="69.0" layoutY="165.0" prefHeight="17.0" prefWidth="123.0" />
+      <Label fx:id="resaltgod2" contentDisplay="CENTER" layoutX="327.0" layoutY="165.0" prefHeight="17.0" prefWidth="123.0" />
+
+    </children>
+</AnchorPane>
